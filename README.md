@@ -5,7 +5,7 @@
 Ans: React is an efficient, declarative, and flexible open-source JavaScript library for building simple, fast, and scalable frontends of web application.
 
 01. Differentiate between Real DOM and Virtual DOM.?
-2. 
+ 
 Ans: :Real dom is the  browser’s  representation of  HTML   structures.when user  interacts with website, real dom reflects it and updated html.
 
  Virtual  dom is an abstraction of real dom and lightweight copy of real dom.when user change any state,virtual dom updates only changable part by diffing algorithm .it has another name reconsilation..
