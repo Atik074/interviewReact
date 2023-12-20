@@ -45,4 +45,42 @@ vi)	Strong community support
 vii)	Available extension
 
 
+******************************************************
+               01.What is JSX, and how does it work? 
+	       
+Ans:Jsx means javascript XML that is a syntax extension of javascript and valid javascript code .it is a javascript power,  and dynamic value added in jsx file.
+
+Browers does not understand Jsx code . .Babel is a transpiler of js .Jsx code transpile  into javascript code by Babel.then browser understand jsx code .
+
+    02. What are React hooks? Explain the most common React  hooks and their usage. ?
+    
+    Ans:Hooks are simple javascript function that allow functional component to use state.It can be statefull and manage side effect.
+
+                      Most common in react hooks....
+
+   i)useState: manage state and contains two element.one is     current value and other is  update value that is function.
+   
+   ii) useEffect:it manage side effect like API call, subscription and more.
+   
+  iii) useContext:  it retruns a current value from a context
+  
+  iv) useReducer: it is a alternative of useState hook.it helps with complex state management
+  
+  v)UseRef:  Returns a ref with current property.
+
+03) Why do you prefer using functional components?
+4) 
+   Ans: Functional components are simple javascript function that takes a props as an argument and return  a react element to be rendered .
+   
+
+    Prefer using functional components
+i)	It is easy to learn and code clean & readable
+ii)	No require for constructor method
+iii)	No concern about “this” keyword
+iv)	It is simple than class component
+v)	Debugging and testing easier
+vi)	It is reuseabl 
+
+******************************************************
+
 
