@@ -83,4 +83,74 @@ vi)	It is reuseabl
 
 ******************************************************
 
+Title : Exploring the React component lifecycle: A guide to understanding the different phases.
+
+Introduction: Every React Component has a lifecycle of its own, the lifecycle of a component can be defined as the series of methods that are invoked in different stages of the component’s existence. The definition is pretty straightforward but what do we mean by different stages? A React Component can go through four stages of its life as follows.
+
+
+A component's life cycle has three main phases: 
+
+
+the Mounting Phase,
+the Updating Phase, 
+and the Unmounting Phase.
+
+
+The Mounting Phase begins when a component is first created and inserted into the DOM. The Updating Phase occurs when a component's state or props change. And the Unmounting Phase occurs when a component is removed from the DOM.
+
+
+Mounting phase: The mounting phase refers to the period when a component is being created and inserted into the DOM. The mounting phase has three main lifecycle methods that are called in order : 
+
+constructor() : 
+
+
+The constructor() method is called when the component is first created. You use it to initialize the component's state and bind methods to the component's instance.
+
+
+render() :
+
+
+The render() method is responsible for generating the component's virtual DOM representation based on its current props and state. It is called every time the component needs to be re-rendered, either because its props or state have changed, or because a parent component has been re-rendered.
+
+getDerivedStateFromProps() :
+
+
+getDerivedStateFromProps() is a lifecycle method available in React 16.3 and later versions that is invoked during the mounting and updating phase of a component. It takes two parameters:
+
+props: The updated props for the component.
+state: The current state of the component.
+
+
+Component Updating Phase: This phase occurs when a component's props or state changes, and the component needs to be updated in the DOM.
+
+shouldComponentUpdate() : 
+
+
+The shouldComponentUpdate()  method is called before a component is updated. It takes two arguments: nextProps and nextState. This method returns a boolean value that determines whether the component should update or not. If this method returns true, the component will update, and if it returns false, the component will not update.
+
+
+componentWillUpdate() :
+
+
+componentWillUpdate() is a lifecycle method in React that gets called just before a component's update cycle starts. It receives the next prop and state as arguments and allows you to perform any necessary actions before the component updates.
+
+componentDidUpdate :
+
+
+The componentDidUpdate() method is a lifecycle method in React that is called after a component has been updated and re-rendered. It is useful for performing side effects or additional operations when the component's props or state have changed.
+
+
+Component Unmounting Phase : The unmounting phase refers to the lifecycle stage when a component is being removed from the DOM (Document Object Model) and is no longer rendered or accessible. During this phase, React performs a series of cleanup operations to ensure that the component and its associated resources are properly disposed of. The unmounting phase is the last stage in the lifecycle of a React component and occurs when the component is being removed from the DOM tree.
+
+componentWillUnmount() : 
+
+
+This method is called just before the component is removed from the DOM. It allows you to perform any necessary cleanup, such as canceling timers, removing event listeners, or clearing any data structures that were set up during the mounting phase. After componentWillUnmount() is called, the component is removed from the DOM and all of its state and props are destroyed.
+
+
+
+
+Summary: React components have a life cycle consisting of three phases: Mounting, Updating, and Unmounting. Each phase has specific lifecycle methods that are called at different points in the component's lifecycle.
+*****************************************************************************
+
 
